@@ -1,0 +1,15 @@
+{
+  "id": "linkmind",
+  "name": "LinkMind",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Automatically handles clicks on unresolved links in Obsidian, creating notes and integrating with external AI content generation.",
+  "author": "hsh0615",
+  "authorUrl": "https://github.com/hsh0615",
+  "isDesktopOnly": false,
+  "fundingUrl": {
+    "GitHub Sponsor": "https://github.com/sponsors/hsh0615",
+    "Buy Me a Coffee": "https://www.buymeacoffee.com/hsh0615"
+  },
+  "main": "main.js"
+} 
