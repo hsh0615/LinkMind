@@ -1,8 +1,8 @@
-# Obsidian Unresolved Link Handler
+# LinkMind - Obsidian Unresolved Link Handler
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/hsh0615/obsidian-unresolved-link-handler)
-![GitHub all releases](https://img.shields.io/github/downloads/hsh0615/obsidian-unresolved-link-handler/total)
-![GitHub](https://img.shields.io/github/license/hsh0615/obsidian-unresolved-link-handler)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/hsh0615/LinkMind)
+![GitHub all releases](https://img.shields.io/github/downloads/hsh0615/LinkMind/total)
+![GitHub](https://img.shields.io/github/license/hsh0615/LinkMind)
 
 An [Obsidian](https://obsidian.md) plugin that handles clicks on unresolved links (gray nodes) and integrates with an external AI system to automatically generate content.
 
@@ -16,7 +16,7 @@ An [Obsidian](https://obsidian.md) plugin that handles clicks on unresolved link
 
 ## Demo
 
-![Demo GIF](https://raw.githubusercontent.com/hsh0615/obsidian-unresolved-link-handler/main/assets/demo.gif)
+![Demo GIF](https://raw.githubusercontent.com/hsh0615/LinkMind/main/assets/demo.gif)
 
 ## Installation
 
@@ -24,12 +24,12 @@ An [Obsidian](https://obsidian.md) plugin that handles clicks on unresolved link
 
 1. Open Obsidian Settings
 2. Go to Community Plugins and disable Safe Mode
-3. Click Browse and search for "Unresolved Link Handler"
+3. Click Browse and search for "LinkMind"
 4. Install the plugin and enable it
 
 ### Manual Installation
 
-1. Download the latest release from the [releases page](https://github.com/hsh0615/obsidian-unresolved-link-handler/releases)
+1. Download the latest release from the [releases page](https://github.com/hsh0615/LinkMind/releases)
 2. Extract the ZIP file to your Obsidian plugins folder: `.obsidian/plugins/`
 3. Reload Obsidian
 4. Enable the plugin in the Community Plugins settings
@@ -47,7 +47,7 @@ An [Obsidian](https://obsidian.md) plugin that handles clicks on unresolved link
 
 For automatic content generation, this plugin works with a companion Python script:
 
-1. Install the Python script from the [companion repository](https://github.com/hsh0615/obsidian-knowledge-assistant)
+1. Install the Python script from this repository
 2. Configure the script with your Obsidian vault path and API keys
 3. Run the Python script in monitoring mode
 4. Click on unresolved links in Obsidian
@@ -69,17 +69,15 @@ The plugin has a simple settings page where you can:
 4. When a new empty note is detected, the Python script generates content using AI
 5. The generated content is saved to the note, creating a complete, well-structured note
 
-## Companion Python Script
+## Python Backend
 
-The full power of this plugin comes when paired with the companion Python script, which:
+The full power of this plugin comes from its Python backend, which:
 
 - Monitors your vault for new empty notes
 - Uses AI to generate detailed, structured content
 - Creates bidirectional links between related notes
 - Generates index pages for folders
-- Supports different learning approaches (Top-Down and Bottom-Up)
-
-Get the Python script from the [Obsidian Knowledge Assistant repository](https://github.com/hsh0615/obsidian-knowledge-assistant).
+- Supports different learning approaches
 
 ## Contributing
 
