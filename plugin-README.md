@@ -1,68 +1,78 @@
-# Obsidian Unresolved Link Handler
+# LinkMind - Obsidian 智能筆記助手
 
-This plugin automatically handles clicks on unresolved links in Obsidian, creating notes and integrating with an external AI content generation system.
+這個插件可以自動處理 Obsidian 中未解析連結的點擊，創建筆記並使用 AI 生成內容。現在完全在 Obsidian 內運行，無需外部 Python 後端！
 
-## Features
+## 功能
 
-- 🔗 Monitors clicks on unresolved links in notes
-- 📊 Detects clicks on gray nodes in the graph view
-- 📝 Creates empty notes when unresolved links are clicked
-- 🤖 Integrates with a Python-based AI system for automatic content generation
+- 🔗 監控筆記中的未解析連結點擊
+- 📊 檢測圖形視圖中灰色節點的點擊
+- 📝 創建空白筆記
+- 🤖 使用 AI 自動生成內容（完全在 Obsidian 內完成）
+- 🔍 掃描和管理未解析連結
+- 📚 生成資料夾索引頁面
+- 🧠 發現和連接相關概念
 
-## How to Use
+## 使用方法
 
-### Basic Usage
+### 操作面板
 
-1. Install and enable the plugin
-2. Click on any unresolved link (appears as gray text) in your notes
-3. The plugin will create an empty note with the same name
-4. Start writing in the newly created note
+1. 點擊左側欄的大腦圖標或使用命令 `打開 LinkMind 操作面板`
+2. 在操作面板中訪問所有功能：
+   - 創建新筆記
+   - 生成筆記內容
+   - 豐富現有內容
+   - 查找相關概念
+   - 管理未解析連結
+   - 生成資料夾索引
 
-### AI Content Generation
+### 基本使用
 
-For automatic content generation:
+1. 安裝並啟用插件
+2. 在設置中配置您的 OpenAI API 密鑰
+3. 點擊任何未解析連結（顯示為灰色文本）
+4. 插件將創建空白筆記並可選自動生成內容
 
-1. Set up the companion Python script (see below)
-2. Run the Python script in monitoring mode
-3. Click on unresolved links in Obsidian
-4. The Python script will detect the new empty notes and automatically generate content
+### AI 內容生成
 
-## Companion Python Script
+1. 在設置中配置您的 OpenAI API 密鑰
+2. 選擇您喜歡的 AI 模型
+3. 啟用自動生成內容選項（可選）
+4. 點擊未解析連結或使用操作面板中的按鈕生成內容
 
-This plugin works best with the companion Python script that provides AI-powered content generation:
+## 配置
 
-1. Clone the [Obsidian Knowledge Assistant repository](https://github.com/hsh0615/obsidian-knowledge-assistant)
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Configure your `.env` file with your Obsidian vault path and API keys
-4. Run the script: `python main.py`
-5. Select option 2 to monitor unresolved links
+插件設置頁面提供以下選項：
 
-## Configuration
+- API 密鑰：配置您的 OpenAI API 密鑰
+- API 模型：選擇 GPT-4 Turbo 或 GPT-3.5 Turbo
+- 默認資料夾：設置新筆記的默認存儲位置
+- 自動生成內容：啟用/禁用點擊未解析連結時自動生成內容
 
-The plugin has minimal configuration. Simply install and enable it to start using.
+## 常見問題解答
 
-Future versions may include additional configuration options.
+- **問**: 我需要運行外部 Python 腳本嗎？
+  **答**: 不需要！從 v1.1.0 開始，所有功能都整合在 Obsidian 內部。
 
-## Troubleshooting
+- **問**: 我需要 OpenAI API 密鑰嗎？
+  **答**: 是的，您需要有效的 OpenAI API 密鑰才能使用 AI 生成功能。
 
-- If notes are not being created, check that the plugin is enabled
-- If AI content is not being generated, ensure the Python script is running in monitoring mode
-- For issues with the Python script, check the console output for error messages
+- **問**: 我可以自定義生成的內容嗎？
+  **答**: 目前可以選擇不同的 AI 模型，未來版本將添加更多自定義選項。
 
-## Support
+## 支持
 
-For support, feature requests, or bug reports:
+如需支持、功能請求或錯誤報告：
 
-- Open an issue on [GitHub](https://github.com/hsh0615/obsidian-unresolved-link-handler/issues)
-- Contact the developer via [GitHub](https://github.com/hsh0615)
+- 在 [GitHub](https://github.com/hsh0615/LinkMind/issues) 上提出問題
+- 通過 [GitHub](https://github.com/hsh0615) 聯繫開發者
 
-## License
+## 許可證
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+本項目使用 MIT 許可證。
 
 ---
 
 <p align="center">
-  <a href="https://github.com/sponsors/hsh0615">GitHub Sponsors</a> •
-  <a href="https://www.buymeacoffee.com/hsh0615">Buy Me a Coffee</a>
+  <a href="https://github.com/sponsors/hsh0615">GitHub 贊助</a> •
+  <a href="https://www.buymeacoffee.com/hsh0615">請我喝杯咖啡</a>
 </p> 
